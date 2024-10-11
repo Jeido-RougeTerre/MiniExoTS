@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+    <script src="./assets/js/main.js" defer></script>
+</head>
+
+<body>
+    <h2>PRESS (<code>F12</code>) to open console log</h2>
+    <h3 id="exercice-1-typescript">Exercice 1 TypeScript</h3>
+    <h4 id="contexte">Contexte</h4>
+    <p>Vous êtes en train de développer une application pour gérer une petite bibliothèque de livres. Vous devez créer
+        un ensemble de classes, interfaces, types, et fonctions pour modéliser les livres, les auteurs, et les
+        opérations possibles sur cette bibliothèque.</p>
+    <h4 id="partie-1-types-de-base-et-interfaces">Partie 1 : Types de base et Interfaces</h4>
+    <ol>
+        <li>
+            <p><strong>Créez une interface <code>Author</code></strong> pour représenter un auteur de livre. Un auteur a
+                un nom (<code>name</code>), une année de naissance (<code>birthYear</code>), et un tableau de genres
+                (<code>genres</code>) qu'il ou elle écrit.</p>
+        </li>
+        <li>
+            <p><strong>Créez une interface <code>Book</code></strong> pour représenter un livre. Un livre a un titre
+                (<code>title</code>), un auteur (<code>author</code> de type <code>Author</code>), un nombre de pages
+                (<code>pages</code>), et un boolean <code>isAvailable</code> pour savoir s'il est disponible ou non
+                dans la bibliothèque.</p>
+        </li>
+    </ol>
+    <h4 id="partie-2-fonctions">Partie 2 : Fonctions</h4>
+    <ol>
+        <li>
+            <p><strong>Créez une fonction <code>createBook</code></strong> qui prend un titre, un auteur (de type
+                <code>Author</code>), et un nombre de pages. Cette fonction doit retourner un objet de type
+                <code>Book</code> avec le <code>isAvailable</code> par défaut à <code>true</code>.</p>
+        </li>
+        <li>
+            <p><strong>Créez une fonction <code>toggleAvailability</code></strong> qui prend un objet de type
+                <code>Book</code> et inverse la disponibilité de ce livre (<code>isAvailable</code>).</p>
+        </li>
+    </ol>
+    <h4 id="partie-3-classes">Partie 3 : Classes</h4>
+    <ol>
+        <li>
+            <p><strong>Créez une classe <code>Library</code></strong> qui représente la bibliothèque. Cette classe doit
+                avoir un tableau de livres (<code>books</code>), et les méthodes suivantes :</p>
+            <ul>
+                <li><code>addBook(book: Book)</code>: ajoute un livre à la bibliothèque.</li>
+                <li><code>removeBook(title: string)</code>: supprime un livre par son titre.</li>
+                <li><code>findBookByTitle(title: string)</code>: renvoie le livre avec le titre correspondant.</li>
+                <li><code>listAvailableBooks()</code>: renvoie un tableau de livres disponibles.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Créez une méthode <code>getBooksByAuthor(authorName: string)</code></strong> dans la classe
+                <code>Library</code> qui renvoie un tableau de livres écrits par un auteur donné.</p>
+        </li>
+    </ol>
+    <h4 id="partie-4-test">Partie 4 : Test</h4>
+    <ol>
+        <li>
+            <p><strong>Instanciez la classe <code>Library</code></strong> et ajoutez plusieurs livres à la bibliothèque.
+            </p>
+        </li>
+        <li>
+            <p><strong>Testez les différentes méthodes</strong> de la classe <code>Library</code> pour vérifier leur bon
+                fonctionnement (ajout, suppression, recherche de livres).</p>
+        </li>
+    </ol>
+
+</body>
+
+</html>
